@@ -110,3 +110,11 @@ VALUES
     ('10 KM Run', 3),
     ('Family Run', 3);
 GO
+INSERT INTO EventEnrollment
+    (ParticipantID, EventID, EnrollmentDate)
+VALUES
+    (1, 1, '2026-09-01'),
+    (2, 1, '2026-09-02'),
+    (1, 2, '2026-09-03'),
+    (2, 3, '2026-09-04');
+GO
