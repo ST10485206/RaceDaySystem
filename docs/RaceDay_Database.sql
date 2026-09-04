@@ -41,3 +41,20 @@ CREATE TABLE Category
         REFERENCES Event(EventID)
 );
 GO
+
+CREATE TABLE EventEnrollment
+(
+    EnrollmentID INT IDENTITY(1,1) PRIMARY KEY,
+    ParticipantID INT NOT NULL,
+    EventID INT NOT NULL,
+    EnrollmentDate DATE NOT NULL DEFAULT GETDATE(),
+
+    CONSTRAINT FK_Enrollment_Participant
+        FOREIGN KEY (ParticipantID)
+        REFERENCES Participants(ParticipantID),
+
+    CONSTRAINT FK_Enrollment_Event
+        FOREIGN KEY (EventID)
+        REFERENCES Event(EventID)
+);
+GO
