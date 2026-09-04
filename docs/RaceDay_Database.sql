@@ -118,3 +118,10 @@ VALUES
     (1, 2, '2026-09-03'),
     (2, 3, '2026-09-04');
 GO
+INSERT INTO Results
+    (ParticipantID, EventID, Position, FinishTime)
+VALUES
+    (1, 1, 1, '00:28:35'),
+    (2, 1, 2, '00:31:20'),
+    (1, 2, 3, '01:45:10');
+GO
