@@ -76,3 +76,9 @@ CREATE TABLE Results
         REFERENCES Event(EventID)
 );
 GO
+INSERT INTO Organiser
+    (FirstName, LastName, Email, Password, PhoneNumber)
+VALUES
+    ('Thabo', 'Mokoena', 'thabo@raceday.co.za', 'Thabo123', '0712345678'),
+    ('Lerato', 'Motshwane', 'lerato@raceday.co.za', 'Lerato123', '0723456789');
+GO
