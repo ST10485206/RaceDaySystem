@@ -88,3 +88,10 @@ VALUES
     ('khutso', 'Motshwane', 'khutso@gmail.com', 'khutso123'),
     ('Kagiso', 'Mokefe', 'kagiso@gmail.com', 'Kagiso123');
 GO
+INSERT INTO Event
+    (EventName, Location, [Date], OrganiserID)
+VALUES
+    ('Pretoria City Run', 'Pretoria', '2026-10-10', 1),
+    ('Johannesburg Marathon', 'Johannesburg', '2026-11-15', 2),
+    ('Tshwane Fun Run', 'Tshwane', '2026-12-05', 1);
+GO
