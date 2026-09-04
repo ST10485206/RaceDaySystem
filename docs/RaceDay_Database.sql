@@ -29,3 +29,15 @@ CREATE TABLE Event
         REFERENCES Organiser(OrganiserID)
 );
 GO
+
+CREATE TABLE Category
+(
+    CategoryID INT IDENTITY(1,1) PRIMARY KEY,
+    CategoryName NVARCHAR(100) NOT NULL,
+    EventID INT NOT NULL,
+
+    CONSTRAINT FK_Category_Event
+        FOREIGN KEY (EventID)
+        REFERENCES Event(EventID)
+);
+GO
