@@ -82,3 +82,9 @@ VALUES
     ('Thabo', 'Mokoena', 'thabo@raceday.co.za', 'Thabo123', '0712345678'),
     ('Lerato', 'Motshwane', 'lerato@raceday.co.za', 'Lerato123', '0723456789');
 GO
+INSERT INTO Participants
+    (FirstName, LastName, Email, Password)
+VALUES
+    ('khutso', 'Motshwane', 'khutso@gmail.com', 'khutso123'),
+    ('Kagiso', 'Mokefe', 'kagiso@gmail.com', 'Kagiso123');
+GO
