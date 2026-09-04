@@ -169,3 +169,11 @@ INNER JOIN Participants
 INNER JOIN Event
     ON EventEnrollment.EventID = Event.EventID;
 GO
+SELECT
+    Event.EventName,
+    Category.CategoryName
+FROM Category
+INNER JOIN Event
+    ON Category.EventID = Event.EventID
+ORDER BY Event.EventName;
+GO
