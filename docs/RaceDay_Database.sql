@@ -158,3 +158,14 @@ FROM Event
 INNER JOIN Organiser
     ON Event.OrganiserID = Organiser.OrganiserID;
 GO
+SELECT
+    Participants.FirstName,
+    Participants.LastName,
+    Event.EventName,
+    EventEnrollment.EnrollmentDate
+FROM EventEnrollment
+INNER JOIN Participants
+    ON EventEnrollment.ParticipantID = Participants.ParticipantID
+INNER JOIN Event
+    ON EventEnrollment.EventID = Event.EventID;
+GO
