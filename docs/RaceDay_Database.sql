@@ -58,3 +58,21 @@ CREATE TABLE EventEnrollment
         REFERENCES Event(EventID)
 );
 GO
+
+CREATE TABLE Results
+(
+    ResultsID INT IDENTITY(1,1) PRIMARY KEY,
+    ParticipantID INT NOT NULL,
+    EventID INT NOT NULL,
+    Position INT NOT NULL,
+    FinishTime TIME NOT NULL,
+
+    CONSTRAINT FK_Results_Participant
+        FOREIGN KEY (ParticipantID)
+        REFERENCES Participants(ParticipantID),
+
+    CONSTRAINT FK_Results_Event
+        FOREIGN KEY (EventID)
+        REFERENCES Event(EventID)
+);
+GO
