@@ -148,3 +148,13 @@ GO
 -- Verify Results table
 SELECT * FROM Results;
 GO
+SELECT
+    Event.EventName,
+    Event.Location,
+    Event.[Date],
+    Organiser.FirstName,
+    Organiser.LastName
+FROM Event
+INNER JOIN Organiser
+    ON Event.OrganiserID = Organiser.OrganiserID;
+GO
