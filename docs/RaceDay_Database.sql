@@ -95,3 +95,18 @@ VALUES
     ('Johannesburg Marathon', 'Johannesburg', '2026-11-15', 2),
     ('Tshwane Fun Run', 'Tshwane', '2026-12-05', 1);
 GO
+INSERT INTO Category
+    (CategoryName, EventID)
+VALUES
+    ('5 KM Run', 1),
+    ('10 KM Run', 1),
+    ('21 KM Half Marathon', 1),
+
+    ('5 KM Run', 2),
+    ('10 KM Run', 2),
+    ('42 KM Marathon', 2),
+
+    ('5 KM Fun Run', 3),
+    ('10 KM Run', 3),
+    ('Family Run', 3);
+GO
