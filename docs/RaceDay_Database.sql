@@ -177,3 +177,16 @@ INNER JOIN Event
     ON Category.EventID = Event.EventID
 ORDER BY Event.EventName;
 GO
+SELECT
+    Participants.FirstName,
+    Participants.LastName,
+    Event.EventName,
+    Results.Position,
+    Results.FinishTime
+FROM Results
+INNER JOIN Participants
+    ON Results.ParticipantID = Participants.ParticipantID
+INNER JOIN Event
+    ON Results.EventID = Event.EventID
+ORDER BY Results.Position;
+GO
