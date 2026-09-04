@@ -125,3 +125,26 @@ VALUES
     (2, 1, 2, '00:31:20'),
     (1, 2, 3, '01:45:10');
 GO
+-- Verify Organiser table
+SELECT * FROM Organiser;
+GO
+
+-- Verify Event table
+SELECT * FROM Event;
+GO
+
+-- Verify Category table
+SELECT * FROM Category;
+GO
+
+-- Verify Participants table
+SELECT * FROM Participants;
+GO
+
+-- Verify EventEnrollment table
+SELECT * FROM EventEnrollment;
+GO
+
+-- Verify Results table
+SELECT * FROM Results;
+GO
